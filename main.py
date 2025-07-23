@@ -18,7 +18,7 @@ print(dfMontadora)
 con = MongoClient('mongodb://localhost:27017')
 db = con.get_database("dataops")
 colecaoCarros = db.get_collection('carros')
-colecaoMontadoras = db.get_collection('montadoras')
+colecaoMontadoras = db.get_collection('montadora')
 
 
 #converte o dataFrame em um dicionario para que possa ser inserido no Banco de dados
