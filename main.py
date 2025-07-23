@@ -14,7 +14,7 @@ dfMontadora = pd.DataFrame({"Montadora":["Chevrolet","Volkswagen", "Renault","Fo
 print(dfCarros)
 print(dfMontadora)
 
-#realizando conecção com o BD local e reverenciando cada collection do bd
+#realizando conexão com o BD local e reverenciando cada collection do bd
 con = MongoClient('mongodb://localhost:27017')
 db = con.get_database("dataops")
 colecaoCarros = db.get_collection('carros')
